@@ -1,0 +1,11 @@
+RMI program:
+------------
+Set Classpath (if necessary) & Start RMI Registry:
+-------------------------------------------------
+set CLASSPATH=C:/ws/java/CalcRMICalculation/bin/
+"%java_home%\bin\rmiregistry" -J-Djava.rmi.server.codebase=file:/C:/ws/java/CalcRMICalculation/bin/
+
+Eclipse Run Configuration -> CalcTest:
+--------------------------------------
+Program Args: RMI or SCKT
+VM Args: -Djava.security.policy="${resource_loc:/TestCalc/src/policy.ini}"
